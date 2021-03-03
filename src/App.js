@@ -11,12 +11,12 @@ import Home from './pages/home'
 function App() {
   return (
     <Router>
-      <div>       
+      <main>       
         <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/about" component={About} />
         </Switch>
-      </div>
+      </main>
     </Router>
   );
 }

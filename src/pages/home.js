@@ -1,18 +1,24 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
+import Projects from '../components/projectData'
+
 const Home = () => {
     return (
-        <div>
-            <header>Frontend Mentor Projects</header>
-            <ul>
-                <li>
-                    <Link to="/">Home</Link>
-                </li>
-                <li>
-                    <Link to="/about">About Page</Link>
-                </li>
-            </ul>
+        <div className="container mx-auto text-center">
+            <header className="text-3xl font-bold my-4">Frontend Mentor Projects</header>
+            <div className="mt-10">
+                <ul>
+                    {Projects.map((project, idx) => {
+                        return (
+                            <li key={idx}>
+                                <Link to={project.path}>{project.title}</Link>
+                            </li>
+                        )
+                    })}
+                </ul>
+            </div>
+            
         </div>
     )
 }
