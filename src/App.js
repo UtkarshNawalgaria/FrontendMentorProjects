@@ -5,8 +5,9 @@ import {
   Route,
 } from 'react-router-dom'
 
-import About from './pages/about'
+
 import Home from './pages/home'
+import Pricing from './pages/interactive-pricing-component'
 
 function App() {
   return (
@@ -14,7 +15,7 @@ function App() {
       <main>       
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route path="/about" component={About} />
+          <Route path="/interactive-pricing-component" component={Pricing} />
         </Switch>
       </main>
     </Router>

@@ -1,12 +1,8 @@
 const Projects = [
     {
-        title: "Project 1",
-        path: "/about"
+        title: "Interactive Pricing Component",
+        path: "/interactive-pricing-component"
     },
-    {
-        title: "Project 2",
-        path: "/about"
-    }
 ]
 
 export default Projects
